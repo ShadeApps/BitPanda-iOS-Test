@@ -1,7 +1,7 @@
 {
   "data": {
     "type": "collection",
-    "attributes": {
+    "items": {
       "cryptocoins": [
         {
           "type": "cryptocoin",
