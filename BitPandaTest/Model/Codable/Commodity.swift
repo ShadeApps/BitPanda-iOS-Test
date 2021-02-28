@@ -12,6 +12,14 @@ struct Commodity: Codable {
 	let attributes: Attribute?
 	let id: String?
 	let type: String?
+    var assetType: AssetType?
+    var walletType: WalletType?
+
+    enum CodingKeys: String, CodingKey {
+        case attributes
+        case id
+        case type
+    }
 
 	init(from decoder: Decoder) throws {
 		let values = try? decoder.container(keyedBy: CodingKeys.self)

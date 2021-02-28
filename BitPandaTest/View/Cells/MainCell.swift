@@ -14,8 +14,48 @@ final class MainCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var otherDetailLabel: UILabel!
 
-    func layoutWith(_ attribute: Attribute) {
+    func layoutWith(_ commodity: Commodity?, type: GroupType) {
+        guard let attribute = commodity?.attributes else { return }
 
+        let typeName = attribute.assetTypeName ?? ""
+        let groupName = attribute.assetGroupName ?? ""
+        let cryptoSymbol = " \(attribute.cryptocoinSymbol ?? "")"
+        let symbol = attribute.symbol ?? ""
+        let avgPrice = attribute.avgPrice ?? ""
+        let isDefault = attribute.isDefault ?? false
+        let fiatSymbol = " \(attribute.fiatSymbol ?? Constants.defaultCurrency)"
+
+        if typeName.isEmpty, groupName.isEmpty, type == .asset {
+            // fiat
+            priceLabel.text = attribute.toEurRate ?? ""
+            symbolLabel.text = symbol + " \(Constants.toEUR)"
+        } else {
+            priceLabel.text = avgPrice + fiatSymbol
+            symbolLabel.text = symbol
+        }
+
+        nameLabel.text = attribute.name ?? ""
+        otherDetailLabel.text = typeName
+
+        if type == .wallet {
+            if case .fiatWallets = commodity?.walletType {
+                priceLabel.text = (attribute.balance ?? "") + fiatSymbol
+            } else {
+                priceLabel.text = (attribute.balance ?? "") + cryptoSymbol
+            }
+
+            otherDetailLabel.text = isDefault ? Constants.defaultNotion : ""
+        }
+    }
+
+}
+
+private extension MainCell {
+
+    enum Constants {
+        static let toEUR = "to EUR"
+        static let defaultCurrency = "EUR"
+        static let defaultNotion = "📥 Default"
     }
 
 }

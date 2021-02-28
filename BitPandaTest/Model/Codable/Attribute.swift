@@ -83,14 +83,14 @@ struct Attribute: Codable {
 	let balance: String?
 	let cryptocoinId: String?
 	let cryptocoinSymbol: String?
-	let deleted: Bool?
+	let deleted: Bool
 	let isDefault: Bool?
 	let pendingTransactionsCount: Int?
 	let androidSupportedVersion: String?
 	let circulatingSupply: String?
 	let family: String?
 	let iosSupportedVersion: String?
-	let hasWallets: Bool?
+	let hasWallets: Bool
 	let logoColor: String?
 	let logoWhite: String?
 	let minWithdrawEuro: String?
@@ -278,14 +278,14 @@ struct Attribute: Codable {
 		balance = try? values?.decodeIfPresent(String.self, forKey: .balance)
 		cryptocoinId = try? values?.decodeIfPresent(String.self, forKey: .cryptocoinId)
 		cryptocoinSymbol = try? values?.decodeIfPresent(String.self, forKey: .cryptocoinSymbol)
-		deleted = try? values?.decodeIfPresent(Bool.self, forKey: .deleted)
+		deleted = (try? values?.decodeIfPresent(Bool.self, forKey: .deleted)) ?? false
 		isDefault = try? values?.decodeIfPresent(Bool.self, forKey: .isDefault)
 		pendingTransactionsCount = try? values?.decodeIfPresent(Int.self, forKey: .pendingTransactionsCount)
 		androidSupportedVersion = try? values?.decodeIfPresent(String.self, forKey: .androidSupportedVersion)
 		circulatingSupply = try? values?.decodeIfPresent(String.self, forKey: .circulatingSupply)
 		family = try? values?.decodeIfPresent(String.self, forKey: .family)
 		iosSupportedVersion = try? values?.decodeIfPresent(String.self, forKey: .iosSupportedVersion)
-		hasWallets = try? values?.decodeIfPresent(Bool.self, forKey: .hasWallets)
+		hasWallets = (try? values?.decodeIfPresent(Bool.self, forKey: .hasWallets)) ?? true
 		logoColor = try? values?.decodeIfPresent(String.self, forKey: .logoColor)
 		logoWhite = try? values?.decodeIfPresent(String.self, forKey: .logoWhite)
 		minWithdrawEuro = try? values?.decodeIfPresent(String.self, forKey: .minWithdrawEuro)

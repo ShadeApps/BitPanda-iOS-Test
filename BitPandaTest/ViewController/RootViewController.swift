@@ -22,6 +22,8 @@ final class RootViewController: TabmanViewController {
     @IBOutlet private weak var tabView: UIView!
     private let topBar = DefaultBar()
 
+    private let dataProvider = DataProvider()
+
     private let assetsVC = Storyboard.main.assetViewController()!
     private let walletsVC = Storyboard.main.walletViewController()!
 
@@ -29,7 +31,7 @@ final class RootViewController: TabmanViewController {
         [assetsVC, walletsVC]
     }
 
-    // Overriding not supported in extensions so it has to be here
+    // Overriding not supported in extensions so this override is here
     override func pageboyViewController(_ pageboyViewController: PageboyViewController,
                                         didScrollToPageAt index: TabmanViewController.PageIndex,
                                         direction: PageboyViewController.NavigationDirection,
@@ -62,11 +64,18 @@ extension RootViewController {
             inset = Constants.navigationHeight + Constants.tabHeight
         }
 
-        assetsVC.topInset = inset
-        walletsVC.topInset = inset
-
-        // PageboyViewControllerDataSource
         dataSource = self
+
+        guard let root = dataProvider.dataFor(RootData.self, url: Constants.dataURL),
+              let data = root.data else {
+            return
+        }
+
+        assetsVC.topInset = inset
+        assetsVC.viewModel = ListViewModel(data: data, groupType: .asset)
+
+        walletsVC.topInset = inset
+        walletsVC.viewModel = ListViewModel(data: data, groupType: .wallet)
     }
 }
 
@@ -104,6 +113,7 @@ private extension RootViewController {
     enum Constants {
         static let navigationHeight = CGFloat(44)
         static let tabHeight = CGFloat(40)
+        static let dataURL = File.dataJson.url()!
     }
 
 }
