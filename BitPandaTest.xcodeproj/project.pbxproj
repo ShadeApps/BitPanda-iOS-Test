@@ -15,6 +15,20 @@
 		4053797825EBE19B0044C144 /* BitPandaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053797725EBE19B0044C144 /* BitPandaTestTests.swift */; };
 		4053798325EBE19B0044C144 /* BitPandaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053798225EBE19B0044C144 /* BitPandaTestUITests.swift */; };
 		405379B525EBE5220044C144 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379B425EBE5220044C144 /* R.generated.swift */; };
+		405379BE25EBE5E90044C144 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 405379BD25EBE5E90044C144 /* data.json */; };
+		405379C625EBE6060044C144 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 405379C525EBE6060044C144 /* Localizable.strings */; };
+		405379CC25EBE7030044C144 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379CB25EBE7030044C144 /* Typealiases.swift */; };
+		405379DA25EBF5710044C144 /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379D325EBF5710044C144 /* Collection+Ext.swift */; };
+		405379DB25EBF5710044C144 /* TMBarView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379D425EBF5710044C144 /* TMBarView+Ext.swift */; };
+		405379DC25EBF5710044C144 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379D525EBF5710044C144 /* UIViewController+Ext.swift */; };
+		405379DD25EBF5710044C144 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379D625EBF5710044C144 /* GCD.swift */; };
+		405379DE25EBF5710044C144 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379D725EBF5710044C144 /* UIView+Ext.swift */; };
+		405379DF25EBF5710044C144 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379D825EBF5710044C144 /* UIImageView+Ext.swift */; };
+		405379E025EBF5710044C144 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379D925EBF5710044C144 /* Optional.swift */; };
+		405379E625EBF5D40044C144 /* HapticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379E525EBF5D40044C144 /* HapticHelper.swift */; };
+		405379EF25EBF61D0044C144 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379EC25EBF61C0044C144 /* SeparatorView.swift */; };
+		405379F025EBF61D0044C144 /* TopBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379ED25EBF61C0044C144 /* TopBarButton.swift */; };
+		405379F125EBF61D0044C144 /* BarIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405379EE25EBF61D0044C144 /* BarIndicatorView.swift */; };
 		A7B869E06BED9D0270D9D09D /* Pods_BitPandaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5441D8773C22E2FB3E19C6 /* Pods_BitPandaTestTests.framework */; };
 		ACE03BF04DE86A3806418899 /* Pods_BitPandaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01617F0B3EACB9E4B98DE43E /* Pods_BitPandaTest.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +68,20 @@
 		4053798225EBE19B0044C144 /* BitPandaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitPandaTestUITests.swift; sourceTree = "<group>"; };
 		4053798425EBE19B0044C144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		405379B425EBE5220044C144 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		405379BD25EBE5E90044C144 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		405379C525EBE6060044C144 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		405379CB25EBE7030044C144 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		405379D325EBF5710044C144 /* Collection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Ext.swift"; sourceTree = "<group>"; };
+		405379D425EBF5710044C144 /* TMBarView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TMBarView+Ext.swift"; sourceTree = "<group>"; };
+		405379D525EBF5710044C144 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		405379D625EBF5710044C144 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		405379D725EBF5710044C144 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		405379D825EBF5710044C144 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		405379D925EBF5710044C144 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		405379E525EBF5D40044C144 /* HapticHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticHelper.swift; sourceTree = "<group>"; };
+		405379EC25EBF61C0044C144 /* SeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		405379ED25EBF61C0044C144 /* TopBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarButton.swift; sourceTree = "<group>"; };
+		405379EE25EBF61D0044C144 /* BarIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarIndicatorView.swift; sourceTree = "<group>"; };
 		48B71DE31B75220F5AB0AD88 /* Pods-BitPandaTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPandaTestTests.release.xcconfig"; path = "Target Support Files/Pods-BitPandaTestTests/Pods-BitPandaTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		644A2E340BCA5F74855AF77E /* Pods-BitPandaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPandaTest.release.xcconfig"; path = "Target Support Files/Pods-BitPandaTest/Pods-BitPandaTest.release.xcconfig"; sourceTree = "<group>"; };
 		779CE2F5C3F396752CE8DF1C /* Pods-BitPandaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPandaTestTests.debug.xcconfig"; path = "Target Support Files/Pods-BitPandaTestTests/Pods-BitPandaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +152,10 @@
 			children = (
 				4053796025EBE19A0044C144 /* AppDelegate.swift */,
 				4053796425EBE19A0044C144 /* ViewController.swift */,
+				405379EA25EBF6030044C144 /* Model */,
+				405379EB25EBF60D0044C144 /* View */,
+				405379E425EBF5C60044C144 /* Helpers */,
+				405379CA25EBE6FA0044C144 /* Extensions */,
 				405379AF25EBE40B0044C144 /* Resources */,
 				4053796E25EBE19B0044C144 /* Info.plist */,
 			);
@@ -153,10 +185,52 @@
 			children = (
 				4053796925EBE19B0044C144 /* Assets.xcassets */,
 				405379B425EBE5220044C144 /* R.generated.swift */,
+				405379BD25EBE5E90044C144 /* data.json */,
+				405379C525EBE6060044C144 /* Localizable.strings */,
 				4053796625EBE19A0044C144 /* Main.storyboard */,
 				4053796B25EBE19B0044C144 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		405379CA25EBE6FA0044C144 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				405379D325EBF5710044C144 /* Collection+Ext.swift */,
+				405379D625EBF5710044C144 /* GCD.swift */,
+				405379D925EBF5710044C144 /* Optional.swift */,
+				405379D425EBF5710044C144 /* TMBarView+Ext.swift */,
+				405379CB25EBE7030044C144 /* Typealiases.swift */,
+				405379D825EBF5710044C144 /* UIImageView+Ext.swift */,
+				405379D725EBF5710044C144 /* UIView+Ext.swift */,
+				405379D525EBF5710044C144 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		405379E425EBF5C60044C144 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				405379E525EBF5D40044C144 /* HapticHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		405379EA25EBF6030044C144 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		405379EB25EBF60D0044C144 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				405379EE25EBF61D0044C144 /* BarIndicatorView.swift */,
+				405379EC25EBF61C0044C144 /* SeparatorView.swift */,
+				405379ED25EBF61C0044C144 /* TopBarButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7DF7FBD728F4C18B72D12EC7 /* Frameworks */ = {
@@ -277,9 +351,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405379C625EBE6060044C144 /* Localizable.strings in Resources */,
 				4053796D25EBE19B0044C144 /* LaunchScreen.storyboard in Resources */,
 				4053796A25EBE19B0044C144 /* Assets.xcassets in Resources */,
 				4053796825EBE19A0044C144 /* Main.storyboard in Resources */,
+				405379BE25EBE5E90044C144 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +499,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405379EF25EBF61D0044C144 /* SeparatorView.swift in Sources */,
+				405379DA25EBF5710044C144 /* Collection+Ext.swift in Sources */,
+				405379E025EBF5710044C144 /* Optional.swift in Sources */,
+				405379F025EBF61D0044C144 /* TopBarButton.swift in Sources */,
+				405379CC25EBE7030044C144 /* Typealiases.swift in Sources */,
+				405379DD25EBF5710044C144 /* GCD.swift in Sources */,
+				405379DC25EBF5710044C144 /* UIViewController+Ext.swift in Sources */,
 				4053796525EBE19A0044C144 /* ViewController.swift in Sources */,
+				405379E625EBF5D40044C144 /* HapticHelper.swift in Sources */,
+				405379DE25EBF5710044C144 /* UIView+Ext.swift in Sources */,
+				405379DF25EBF5710044C144 /* UIImageView+Ext.swift in Sources */,
+				405379F125EBF61D0044C144 /* BarIndicatorView.swift in Sources */,
 				4053796125EBE19A0044C144 /* AppDelegate.swift in Sources */,
 				405379B525EBE5220044C144 /* R.generated.swift in Sources */,
+				405379DB25EBF5710044C144 /* TMBarView+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

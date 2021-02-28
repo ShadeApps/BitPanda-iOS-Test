@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  BitPandaTest
+
+  Created by Sergey Grischyov on 28.02.2021.
+  
+*/
+
+// Tabs
+"assets" = "Assets";
+"wallets" = "Wallets";
+
+// Common
+"ok" = "ok";
+// Error
+"error.title" = "error";
+"error.generalLocalizedMessage" = "Oops, something went wrong :(";
