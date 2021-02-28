@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (5.4.1)
+  - DefaultCodable (1.2.2)
+  - Kingfisher (6.1.1)
+  - Pageboy (3.6.2)
+  - R.swift (5.3.1):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - ShimmerSwift (2.1.1)
+  - SwiftDate (6.3.1)
+  - SwiftLint (0.42.0)
+  - Tabman (2.10.0):
+    - Pageboy (~> 3.6.0)
+  - TinyConstraints (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - DefaultCodable
+  - Kingfisher
+  - R.swift
+  - ShimmerSwift
+  - SwiftDate
+  - SwiftLint
+  - Tabman (~> 2.10.0)
+  - TinyConstraints (~> 4.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DefaultCodable
+    - Kingfisher
+    - Pageboy
+    - R.swift
+    - R.swift.Library
+    - ShimmerSwift
+    - SwiftDate
+    - SwiftLint
+    - Tabman
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  DefaultCodable: d46569187df2aef38e3c62447312c1560d8d9474
+  Kingfisher: 676d63307fbef6ed5d5ed400bff36983480d7500
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
+  R.swift: 56ec7e3aef34b9eee47a659e42462db2c1cc5ac3
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  ShimmerSwift: f7ed2daf9c246de8299dfd9e12c6ab465cba9842
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
+  Tabman: d8d6ab0b483c7db375a71ac227d3ef791b56a049
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+
+PODFILE CHECKSUM: a3656375848a7825419cf5a705c357139cca472d
+
+COCOAPODS: 1.10.1
