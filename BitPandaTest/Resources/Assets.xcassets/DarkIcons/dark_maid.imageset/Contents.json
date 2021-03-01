@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark_maid.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

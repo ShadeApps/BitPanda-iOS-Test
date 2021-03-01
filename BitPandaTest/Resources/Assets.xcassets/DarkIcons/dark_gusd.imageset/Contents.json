@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark_gusd.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

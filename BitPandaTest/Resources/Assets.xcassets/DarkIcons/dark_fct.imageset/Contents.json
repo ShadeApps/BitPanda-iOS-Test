@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark_fct.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

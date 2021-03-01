@@ -9,6 +9,7 @@ import UIKit
 
 final class MainCell: UITableViewCell {
 
+    @IBOutlet weak var topImageView: UIImageView!
     @IBOutlet weak var symbolLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -19,7 +20,7 @@ final class MainCell: UITableViewCell {
 
         let typeName = attribute.assetTypeName ?? ""
         let groupName = attribute.assetGroupName ?? ""
-        let cryptoSymbol = " \(attribute.cryptocoinSymbol ?? "")"
+        let cryptoSymbol = attribute.cryptocoinSymbol ?? ""
         let symbol = attribute.symbol ?? ""
         let avgPrice = attribute.avgPrice ?? ""
         let isDefault = attribute.isDefault ?? false
@@ -41,10 +42,14 @@ final class MainCell: UITableViewCell {
             if case .fiatWallets = commodity?.walletType {
                 priceLabel.text = (attribute.balance ?? "") + fiatSymbol
             } else {
-                priceLabel.text = (attribute.balance ?? "") + cryptoSymbol
+                priceLabel.text = (attribute.balance ?? "") + " " + cryptoSymbol
             }
 
             otherDetailLabel.text = isDefault ? Constants.defaultNotion : ""
+            topImageView.image = Image.list_icon()!
+        } else {
+            let source = ImageProvider.imagesFor(symbol: symbol)
+            topImageView.image = traitCollection.isDarkMode ? source.darkImage : source.image
         }
     }
 

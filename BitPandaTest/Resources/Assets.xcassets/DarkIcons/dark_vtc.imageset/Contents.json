@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark_vtc.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

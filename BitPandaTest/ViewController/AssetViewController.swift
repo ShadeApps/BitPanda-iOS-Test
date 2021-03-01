@@ -10,6 +10,7 @@ import UIKit
 final class AssetViewController: UIViewController {
 
     var viewModel: ListViewModel!
+
     var topInset = CGFloat(0) {
         didSet {
             tableView?.contentInset = UIEdgeInsets(top: topInset, left: 0, bottom: 20, right: 0)
@@ -25,6 +26,11 @@ final class AssetViewController: UIViewController {
         setupTableView()
     }
 
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+
+        tableView.reloadData()
+    }
 }
 
 // MARK: - Table View

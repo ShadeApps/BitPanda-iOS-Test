@@ -299,5 +299,4 @@ struct Attribute: Codable {
 		fiatId = try? values?.decodeIfPresent(String.self, forKey: .fiatId)
 		fiatSymbol = try? values?.decodeIfPresent(String.self, forKey: .fiatSymbol)
 	}
-
 }

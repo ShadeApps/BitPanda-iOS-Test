@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark_xdn.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

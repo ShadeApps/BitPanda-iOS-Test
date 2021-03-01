@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark_wpr.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

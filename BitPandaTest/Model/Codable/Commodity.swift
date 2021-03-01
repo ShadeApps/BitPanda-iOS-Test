@@ -9,7 +9,7 @@ import Foundation
 
 struct Commodity: Codable {
 
-	let attributes: Attribute?
+	var attributes: Attribute?
 	let id: String?
 	let type: String?
     var assetType: AssetType?

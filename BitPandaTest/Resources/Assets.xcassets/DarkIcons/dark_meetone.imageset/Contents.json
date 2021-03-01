@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark_meetone.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

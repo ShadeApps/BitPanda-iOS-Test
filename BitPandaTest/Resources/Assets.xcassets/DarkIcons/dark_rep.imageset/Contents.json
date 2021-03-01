@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark_rep.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

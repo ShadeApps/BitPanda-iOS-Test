@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark_mco.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
