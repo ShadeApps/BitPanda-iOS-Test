@@ -32,9 +32,9 @@ final class MainCell: UITableViewCell {
             symbolLabel.text = symbol + " \(Constants.toEUR)"
         } else {
             if let double = avgPrice.toDouble(),
-               let value = CurrencyHelper.string(from: double),
+               let value = CurrencyHelper.string(from: double, with: String(fiatSymbol.dropFirst())),
                type != .wallet {
-                priceLabel.text = value + fiatSymbol
+                priceLabel.text = value
             } else {
                 priceLabel.text = avgPrice + fiatSymbol
             }
@@ -46,10 +46,16 @@ final class MainCell: UITableViewCell {
         otherDetailLabel.text = typeName
 
         if type == .wallet {
+            let balance = attribute.balance ?? ""
             if case .fiatWallets = commodity?.walletType {
-                priceLabel.text = (attribute.balance ?? "") + fiatSymbol
+                if let double = balance.toDouble(),
+                   let value = CurrencyHelper.string(from: double, with: String(fiatSymbol.dropFirst())) {
+                    priceLabel.text = value
+                } else {
+                    priceLabel.text = balance + fiatSymbol
+                }
             } else {
-                priceLabel.text = (attribute.balance ?? "") + " " + cryptoSymbol
+                priceLabel.text = balance + " " + cryptoSymbol
             }
 
             otherDetailLabel.text = isDefault ? Constants.defaultNotion : ""
