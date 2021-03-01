@@ -47,6 +47,8 @@
 		40537A8825ED24560044C144 /* UITraitCollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40537A8725ED24560044C144 /* UITraitCollection+Ext.swift */; };
 		40537A9B25ED6AE40044C144 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40537A9A25ED6AE40044C144 /* ListViewModel.swift */; };
 		40537AD925ED76910044C144 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40537AD825ED76910044C144 /* ImageProvider.swift */; };
+		40537B2D25ED845F0044C144 /* CurrencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40537B2C25ED845F0044C144 /* CurrencyHelper.swift */; };
+		40537B3225ED850E0044C144 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40537B3125ED850E0044C144 /* String+Ext.swift */; };
 		A7B869E06BED9D0270D9D09D /* Pods_BitPandaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5441D8773C22E2FB3E19C6 /* Pods_BitPandaTestTests.framework */; };
 		ACE03BF04DE86A3806418899 /* Pods_BitPandaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01617F0B3EACB9E4B98DE43E /* Pods_BitPandaTest.framework */; };
 /* End PBXBuildFile section */
@@ -118,6 +120,8 @@
 		40537A8725ED24560044C144 /* UITraitCollection+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITraitCollection+Ext.swift"; sourceTree = "<group>"; };
 		40537A9A25ED6AE40044C144 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		40537AD825ED76910044C144 /* ImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		40537B2C25ED845F0044C144 /* CurrencyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHelper.swift; sourceTree = "<group>"; };
+		40537B3125ED850E0044C144 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		48B71DE31B75220F5AB0AD88 /* Pods-BitPandaTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPandaTestTests.release.xcconfig"; path = "Target Support Files/Pods-BitPandaTestTests/Pods-BitPandaTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		644A2E340BCA5F74855AF77E /* Pods-BitPandaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPandaTest.release.xcconfig"; path = "Target Support Files/Pods-BitPandaTest/Pods-BitPandaTest.release.xcconfig"; sourceTree = "<group>"; };
 		779CE2F5C3F396752CE8DF1C /* Pods-BitPandaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPandaTestTests.debug.xcconfig"; path = "Target Support Files/Pods-BitPandaTestTests/Pods-BitPandaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 				405379D825EBF5710044C144 /* UIImageView+Ext.swift */,
 				405379D725EBF5710044C144 /* UIView+Ext.swift */,
 				40537A8725ED24560044C144 /* UITraitCollection+Ext.swift */,
+				40537B3125ED850E0044C144 /* String+Ext.swift */,
 				405379D525EBF5710044C144 /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
@@ -250,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				405379E525EBF5D40044C144 /* HapticHelper.swift */,
+				40537B2C25ED845F0044C144 /* CurrencyHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -608,6 +614,7 @@
 				405379EF25EBF61D0044C144 /* SeparatorView.swift in Sources */,
 				405379DA25EBF5710044C144 /* Collection+Ext.swift in Sources */,
 				405379E025EBF5710044C144 /* Optional.swift in Sources */,
+				40537B2D25ED845F0044C144 /* CurrencyHelper.swift in Sources */,
 				405379F025EBF61D0044C144 /* TopBarButton.swift in Sources */,
 				40537A1225EBFFF30044C144 /* AssetViewController.swift in Sources */,
 				405379FA25EBF9F70044C144 /* Item.swift in Sources */,
@@ -633,6 +640,7 @@
 				40537AD925ED76910044C144 /* ImageProvider.swift in Sources */,
 				405379DB25EBF5710044C144 /* TMBarView+Ext.swift in Sources */,
 				405379FC25EBF9F70044C144 /* Commodity.swift in Sources */,
+				40537B3225ED850E0044C144 /* String+Ext.swift in Sources */,
 				40537A2325EC04530044C144 /* HeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

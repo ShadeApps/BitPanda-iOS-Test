@@ -31,7 +31,14 @@ final class MainCell: UITableViewCell {
             priceLabel.text = attribute.toEurRate ?? ""
             symbolLabel.text = symbol + " \(Constants.toEUR)"
         } else {
-            priceLabel.text = avgPrice + fiatSymbol
+            if let double = avgPrice.toDouble(),
+               let value = CurrencyHelper.string(from: double),
+               type != .wallet {
+                priceLabel.text = value + fiatSymbol
+            } else {
+                priceLabel.text = avgPrice + fiatSymbol
+            }
+
             symbolLabel.text = symbol
         }
 
