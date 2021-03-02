@@ -18,8 +18,6 @@ final class MainCell: UITableViewCell {
     func layoutWith(_ commodity: Commodity?, type: GroupType) {
         guard let attribute = commodity?.attributes else { return }
 
-        let currencyHelper = CurrencyHelper()
-
         let typeName = attribute.assetTypeName ?? ""
         let groupName = attribute.assetGroupName ?? ""
         let cryptoSymbol = attribute.cryptocoinSymbol ?? ""
@@ -34,7 +32,7 @@ final class MainCell: UITableViewCell {
             symbolLabel.text = symbol + " \(Constants.toEUR)"
         } else {
             if let double = avgPrice.toDouble(),
-               let value = currencyHelper.string(from: double, with: String(fiatSymbol.dropFirst()), locale: Locale.current),
+               let value = CurrencyHelper.string(from: double, with: String(fiatSymbol.dropFirst())),
                type != .wallet {
                 priceLabel.text = value
             } else {
@@ -51,7 +49,7 @@ final class MainCell: UITableViewCell {
             let balance = attribute.balance ?? ""
             if case .fiatWallets = commodity?.walletType {
                 if let double = balance.toDouble(),
-                   let value = currencyHelper.string(from: double, with: String(fiatSymbol.dropFirst()), locale: Locale.current) {
+                   let value = CurrencyHelper.string(from: double, with: String(fiatSymbol.dropFirst())) {
                     priceLabel.text = value
                 } else {
                     priceLabel.text = balance + fiatSymbol

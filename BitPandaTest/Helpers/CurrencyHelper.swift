@@ -12,10 +12,11 @@ protocol CurrencyHelpable {
     func string(from digits: Double, with currency: String, locale: Locale) -> String?
 }
 
-struct CurrencyHelper: CurrencyHelpable {
+struct CurrencyHelper {
 
-    var numberFormatter: NumberFormatter! {
+    static var numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
+        formatter.locale = Locale.current
         formatter.usesGroupingSeparator = true
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 3
@@ -24,10 +25,9 @@ struct CurrencyHelper: CurrencyHelpable {
         formatter.roundingMode = .floor
         formatter.numberStyle = .currencyAccounting
         return formatter
-    }
+    }()
 
-    func string(from digits: Double, with currency: String, locale: Locale) -> String? {
-        numberFormatter.locale = locale
+    static func string(from digits: Double, with currency: String) -> String? {
         numberFormatter.currencyCode = currency
         return numberFormatter.string(from: NSNumber(value: digits))
     }
