@@ -31,6 +31,7 @@ Clone the repo and run ```$ pod install``` in the project folder.
 * Added grouping logics
 * Added currency icons to not use SVG
 * Added currency formatter to account for all currencies and locales
+* Added test for helper objects
 
 ## Trivia
 
