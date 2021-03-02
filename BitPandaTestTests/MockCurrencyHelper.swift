@@ -1,19 +1,17 @@
 //
-//  CurrencyHelper.swift
-//  BitPandaTest
+//  MockCurrencyHelper.swift
+//  BitPandaTestTests
 //
 //  Created by Sergey Grischyov on 01.03.2021.
 //
 
-import UIKit
+import Foundation
+@testable import BitPandaTest
 
-protocol CurrencyHelpable {
-    var numberFormatter: NumberFormatter! { get }
-    func string(from digits: Double, with currency: String, locale: Locale) -> String?
-}
-
-struct CurrencyHelper: CurrencyHelpable {
-
+class MockCurrencyHelper: CurrencyHelpable {
+    
+    var helperIsInvokedCounter = 0
+    
     var numberFormatter: NumberFormatter! {
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
@@ -27,9 +25,10 @@ struct CurrencyHelper: CurrencyHelpable {
     }
 
     func string(from digits: Double, with currency: String, locale: Locale) -> String? {
+        helperIsInvokedCounter += 1
         numberFormatter.locale = locale
         numberFormatter.currencyCode = currency
         return numberFormatter.string(from: NSNumber(value: digits))
     }
-
+    
 }

@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HapticHelpable {
+    func vibrate(_ haptic: HapticType)
+}
+
 public enum HapticType {
 
     case light
@@ -44,9 +48,9 @@ public enum HapticType {
     }
 }
 
-open class HapticHelper {
+struct HapticHelper: HapticHelpable {
 
-    public static func vibrate(_ haptic: HapticType) {
+    public func vibrate(_ haptic: HapticType) {
         if let style = haptic.impactStyle {
             let feedbackGenerator = UIImpactFeedbackGenerator(style: style)
             feedbackGenerator.prepare()

@@ -49,6 +49,8 @@
 		40537AD925ED76910044C144 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40537AD825ED76910044C144 /* ImageProvider.swift */; };
 		40537B2D25ED845F0044C144 /* CurrencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40537B2C25ED845F0044C144 /* CurrencyHelper.swift */; };
 		40537B3225ED850E0044C144 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40537B3125ED850E0044C144 /* String+Ext.swift */; };
+		40A2D4F825EE33EF00BC4C71 /* MockHapticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A2D4F725EE33EF00BC4C71 /* MockHapticHelper.swift */; };
+		40A2D4FD25EE33F900BC4C71 /* MockCurrencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A2D4FC25EE33F900BC4C71 /* MockCurrencyHelper.swift */; };
 		A7B869E06BED9D0270D9D09D /* Pods_BitPandaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5441D8773C22E2FB3E19C6 /* Pods_BitPandaTestTests.framework */; };
 		ACE03BF04DE86A3806418899 /* Pods_BitPandaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01617F0B3EACB9E4B98DE43E /* Pods_BitPandaTest.framework */; };
 /* End PBXBuildFile section */
@@ -122,6 +124,8 @@
 		40537AD825ED76910044C144 /* ImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		40537B2C25ED845F0044C144 /* CurrencyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHelper.swift; sourceTree = "<group>"; };
 		40537B3125ED850E0044C144 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		40A2D4F725EE33EF00BC4C71 /* MockHapticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHapticHelper.swift; sourceTree = "<group>"; };
+		40A2D4FC25EE33F900BC4C71 /* MockCurrencyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyHelper.swift; sourceTree = "<group>"; };
 		48B71DE31B75220F5AB0AD88 /* Pods-BitPandaTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPandaTestTests.release.xcconfig"; path = "Target Support Files/Pods-BitPandaTestTests/Pods-BitPandaTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		644A2E340BCA5F74855AF77E /* Pods-BitPandaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPandaTest.release.xcconfig"; path = "Target Support Files/Pods-BitPandaTest/Pods-BitPandaTest.release.xcconfig"; sourceTree = "<group>"; };
 		779CE2F5C3F396752CE8DF1C /* Pods-BitPandaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPandaTestTests.debug.xcconfig"; path = "Target Support Files/Pods-BitPandaTestTests/Pods-BitPandaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				4053797725EBE19B0044C144 /* BitPandaTestTests.swift */,
+				40A2D4F725EE33EF00BC4C71 /* MockHapticHelper.swift */,
+				40A2D4FC25EE33F900BC4C71 /* MockCurrencyHelper.swift */,
 				4053797925EBE19B0044C144 /* Info.plist */,
 			);
 			path = BitPandaTestTests;
@@ -649,7 +655,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A2D4F825EE33EF00BC4C71 /* MockHapticHelper.swift in Sources */,
 				4053797825EBE19B0044C144 /* BitPandaTestTests.swift in Sources */,
+				40A2D4FD25EE33F900BC4C71 /* MockCurrencyHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

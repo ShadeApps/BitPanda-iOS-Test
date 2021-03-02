@@ -36,7 +36,7 @@ final class RootViewController: TabmanViewController {
                                         didScrollToPageAt index: TabmanViewController.PageIndex,
                                         direction: PageboyViewController.NavigationDirection,
                                         animated: Bool) {
-        HapticHelper.vibrate(.light)
+        HapticHelper().vibrate(.light)
     }
 }
 

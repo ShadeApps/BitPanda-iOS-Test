@@ -10,24 +10,74 @@ import XCTest
 
 class BitPandaTestTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let hapticHelper = MockHapticHelper()
+    let currencyHelper = MockCurrencyHelper()
+    
+    func testLightHaptic() {
+        hapticHelper.vibrate(.light)
+        
+        XCTAssertEqual(hapticHelper.hapticIsInvokedCounter, 1)
+    }
+    
+    func testMediumHaptic() {
+        hapticHelper.vibrate(.medium)
+        
+        XCTAssertEqual(hapticHelper.hapticIsInvokedCounter, 1)
+    }
+    
+    func testHeavyHaptic() {
+        hapticHelper.vibrate(.heavy)
+        
+        XCTAssertEqual(hapticHelper.hapticIsInvokedCounter, 1)
+    }
+    
+    func testErrorHaptic() {
+        hapticHelper.vibrate(.error)
+        
+        XCTAssertEqual(hapticHelper.hapticIsInvokedCounter, 1)
+    }
+    
+    func testWarningHaptic() {
+        hapticHelper.vibrate(.warning)
+        
+        XCTAssertEqual(hapticHelper.hapticIsInvokedCounter, 1)
+    }
+    
+    func testSuccessHaptic() {
+        hapticHelper.vibrate(.success)
+        
+        XCTAssertEqual(hapticHelper.hapticIsInvokedCounter, 1)
+    }
+    
+    func testSelectionChangedHaptic() {
+        hapticHelper.vibrate(.selectionChanged)
+        
+        XCTAssertEqual(hapticHelper.hapticIsInvokedCounter, 1)
+    }
+    
+    func testStringToDouble() {
+        XCTAssertEqual(Constants.value.toDouble(), 70.64)
+    }
+    
+    func testCurrencyHelperIsInvoked() {
+        _ = currencyHelper.string(from: Constants.doubleValue, with: Constants.currency, locale: Constants.locale)
+        XCTAssertEqual(currencyHelper.helperIsInvokedCounter, 1)
+    }
+    
+    func testCurrencyHelperFormat() {
+        let result = currencyHelper.string(from: Constants.doubleValue, with: Constants.currency, locale: Constants.locale)
+        XCTAssertEqual(result, "$70.64")
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+}
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+private extension BitPandaTestTests {
+    
+    enum Constants {
+        static let value = "70.64"
+        static let doubleValue = 70.64
+        static let currency = "USD"
+        static let locale = Locale(identifier: "en_US")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    
 }
